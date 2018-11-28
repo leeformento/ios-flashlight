@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="flashlight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daN-k9-ufP">
+                                <rect key="frame" x="159" y="290" width="55" height="30"/>
+                                <state key="normal" title="Turn On"/>
+                                <connections>
+                                    <action selector="turnFlaslightOn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GOP-8t-8Ux"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZv-da-zR9">
+                                <rect key="frame" x="159" y="328" width="57" height="30"/>
+                                <state key="normal" title="Turn Off"/>
+                                <connections>
+                                    <action selector="turnFlaslightOff:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c2v-MA-oZA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="daN-k9-ufP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="270" id="PoM-Cv-KN9"/>
+                            <constraint firstItem="MZv-da-zR9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Shc-eG-P3j"/>
+                            <constraint firstItem="daN-k9-ufP" firstAttribute="leading" secondItem="MZv-da-zR9" secondAttribute="leading" id="bsW-Lg-4iq"/>
+                            <constraint firstItem="MZv-da-zR9" firstAttribute="top" secondItem="daN-k9-ufP" secondAttribute="bottom" constant="8" symbolic="YES" id="z8X-7s-FZT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
